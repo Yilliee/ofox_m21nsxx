@@ -11,7 +11,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/m31nsxx
+DEVICE_PATH := device/samsung/m21nsxx
 
 # Architecture
 TARGET_ARCH := arm64
@@ -94,7 +94,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 #Android 11 details
 PLATFORM_VERSION := 11
-TARGET_KERNEL_SOURCE := kernel/samsung/m31
-TARGET_KERNEL_CONFIG := bluefly_m31_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/m21
+#TARGET_KERNEL_CONFIG := bluefly_m31_defconfig
 #TARGET_KERNEL_CLANG_COMPILE := true
 TW_EXCLUDE_NANO := true

@@ -8,8 +8,8 @@ $(call inherit-product, device/samsung/m31nsxx/device.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)  # If you are building for a tablet
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_m31nsxx
-PRODUCT_DEVICE := m31nsxx
-PRODUCT_MODEL := SM-M315F
+PRODUCT_NAME := omni_m21nsxx
+PRODUCT_DEVICE := m21nsxx
+PRODUCT_MODEL := SM-M215F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

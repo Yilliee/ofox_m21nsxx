@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="m31nsxx"
+FDEVICE="m21nsxx"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -43,7 +43,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_DYNAMIC_SAMSUNG_FIX=1
 	#export FOX_REMOVE_AAPT=1 # Automatically done by dynamic_fix var
 	#export FOX_REMOVE_BASH=1 # Automatically done by dynamic_fix var
-	export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/13520000.ufs/by-name/recover>
+	export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/13520000.ufs/by-name/recovery"
 
 	# Extra build vars
 	#export FOX_REPLACE_BUSYBOX_PS=1 # Causes Bootloop
@@ -61,7 +61,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_HIDE_NOTCH=1
 	export OF_CLOCK_POS=1
 	export OF_ALLOW_DISABLE_NAVBAR=0
-	export TARGET_DEVICE_ALT="m31, m31ns, m31nsxx"
+	export OF_TARGET_DEVICES="m21, m21ns, m21nsxx"
+	export TARGET_DEVICE_ALT="m21, m21ns, m21nsxx"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	#export OF_USE_SYSTEM_FINGERPRINT=1
