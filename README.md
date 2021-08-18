@@ -1,10 +1,2 @@
-## TWRP device tree for the Samsung A515F.
-
-## How-to compile it:
-
-To build:
-
-```sh
-. build/envsetup.sh
-lunch omni_a51-eng
-mka recoveryimage
+M21 and M31 are now unified under the codename exynos9611,
+So this specific repo is now deprecated.
